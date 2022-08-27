@@ -9,7 +9,7 @@
 body {
     font-family: 'Bebas Neue', 'sans-serif';
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center; /* This puts items in the center of the page width-wise. Couple this with height: 100vh; to get it to be in the center of the page. */
     align-items: center; /* This will align items horizontally if flex-direction is column and align items vertically if flex-direction is row */
     height: 100vh;
