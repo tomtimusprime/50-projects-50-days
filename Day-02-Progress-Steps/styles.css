@@ -7,6 +7,7 @@
 }
 
 body {
+    background-color: #f6f7fb;
     font-family: 'Bebas Neue', 'sans-serif';
     display: flex;
     flex-direction: column;
@@ -16,3 +17,18 @@ body {
     overflow: hidden; /* hides scroll bars */
     margin: 0;
 }
+
+.container {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+/* Understand position, z-index, transform - how is this line being drawn with CSS?*/
