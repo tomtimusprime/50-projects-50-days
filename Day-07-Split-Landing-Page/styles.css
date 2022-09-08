@@ -2,6 +2,7 @@
 
 :root {
     --left-bg-color: rgba(87, 84, 236, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
 }
 
 * {
@@ -17,17 +18,44 @@ body {
     margin: 0;
 }
 
-.container {
+h1 {
+    font-size: 4rem;
+    color: white;
     position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: white;
+    border: white solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 15rem;
+    padding: 1.5rem;
+}
+
+.container {
+    position: relative;
     height: 100%;
     width: 100%;
     background: #333;
 }
 
 .split {
-    position: relative;
-    height: 50%;
-    width: 100%;
+    position: absolute;
+    width: 50%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -40,7 +68,6 @@ body {
 
 .split.left::before {
     content: '';
-    position: absolute;
     width: 100%;
     height: 100%;
     background-color: var(--left-bg-color);
@@ -51,5 +78,13 @@ body {
     background: url('xbox.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.split.right::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
 }
 
