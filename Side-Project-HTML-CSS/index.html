@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="sex">Sex</label><br>
+            <select name="sex" id="sex">
+                <option value="male" selected>Male</option>
+                <option value="female">female</option>
+                <option value="preferNotToSay">Prefer Not To Say</option>
+            </select>
+        </div>
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="birthdate">birthdate</label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <div>
+            <label for="membership">Membership</label>
+            <input type="radio" name="membership" value="simple" id="membership"> Simple
+            <input type="radio" name="membership" value="standard" id="membership"> Standard
+            <input type="radio" name="membership" value="Gold" id="membership" checked> Gold
+        </div>
+        <div>
+            <label for="hobbies">Hobbies</label>
+            <input type="checkbox" name="hobbies" value="guitar" id="hobbies"> Guitar
+            <input type="checkbox" name="hobbies" value="weights" id="hobbies"> Weights
+            <input type="checkbox" name="hobbies" value="reading" id="hobbies" checked> Reading
+        </div>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
