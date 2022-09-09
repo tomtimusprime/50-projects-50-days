@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+:root {
+    --background: #0d50a9;
+    --container-color:#99f5e0;
+}
+
+* {
+    /* The box-sizing property allows us to include the padding and border in an element's total width and height.
+    If you set box-sizing: border-box; on an element, padding and border are included in the width and height: */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Bebas Neue', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* This puts items in the center of the page width-wise. Couple this with height: 100vh; to get it to be in the center of the page. */
+    align-items: center; /* This will align items horizontally if flex-direction is column and align items vertically if flex-direction is row */
+    height: 100vh;
+    overflow: hidden; /* hides scroll bars */
+    margin: 0;
+}
+
+.container {
+    background-color: #73cbfd;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0 0 0 / 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 48px;
+    height: 300px;
+    width: 400px;
+    /* border: steelblue solid 2px; */
+}
