@@ -1,8 +1,10 @@
 const labels = document.querySelectorAll('.form-control label');
 
-console.log(labels);
-
 labels.forEach(label => {
     label.innerHtml = label.innerText
-    .split('');
+        .split('')
+        .map((letter, idx) => `<span>${letter}</span>`)
+        .join('');
 })
+
+console.log('Day 08 script running.')
