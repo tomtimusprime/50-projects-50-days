@@ -13,7 +13,12 @@ function generatePassword() {
 
 function copyPassword(){
     let copyText = document.getElementById('password');
-    copyText.select();
-    copyText.setSelectRange(0, 999);
-    copyText.execCommand('copy');
+    // copyText.select();
+    // copyText.setSelectRange(0, 999);
+    // copyText.execCommand('copy');
+    // console.log(copyText.innerText);
+
+    navigator.clipboard.writeText(copyText.value);
+    const clipboardText = navigator.clipboard.readText();
+    console.log(clipboardText);
 }
