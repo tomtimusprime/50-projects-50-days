@@ -14,6 +14,7 @@ const submitFunction = (event) => {
         }
     }
 
+    //This is where the local storage items are set - through the setItem function
     localStorage.setItem('ls_first_name', firstName);
     localStorage.setItem('ls_last_name', lastName);
     localStorage.setItem('ls_email', email);
