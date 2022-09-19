@@ -22,6 +22,7 @@ body {
     background-color: white;
     padding-top: 30px;
     padding: 30px;
+    border-radius: 7px;
 }
 
 .box h2 {

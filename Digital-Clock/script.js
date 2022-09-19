@@ -4,6 +4,7 @@ const clock = () => {
     let mins = date.getMinutes();
     let secs = date.getSeconds();
     let period = 'AM';
+    //Getting the formatting to show up correctly.
     if(hrs == 0){
         hrs = 12;
     } else if (hrs >= 12){
